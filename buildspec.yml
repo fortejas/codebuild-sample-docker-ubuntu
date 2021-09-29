@@ -13,3 +13,4 @@ phases:
     commands:
       - docker images
       - docker run app echo "Hello, World!"
+      - docker inspect app -f '{{ .Architecture }}'
